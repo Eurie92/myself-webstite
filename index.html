@@ -2,21 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My first HTML page</title>
-    <link rel="stylesheet" href="style.css"
+    <title>BRUHHH ME NOOB</title>
+    <style>
+        body {
+            background-color: #800020
+        }
+        
+        .noob {
+            
+     background-color: rgb(255, 216, 20);
+     color: black;
+     border: none;
+     height: 36px;
+     width: 105px;
+     border-radius: 18px;
+     cursor: pointer;
+     margin: 8px;
+     vertical-align: center;
+     
+         
+     }
+     
+     .noob {
+         opacity: 0.8
+     }
+     
+     .noob {
+         opacity: 0.5
+     }
+        }
+    </style>
+    <h1>INPUT THE PASSWORD HERE OR ELSE U GAY</h1>
 </head>
 <body>
     
-        <h1>Eurie V Paulino</h1>
-    
-    <img src="picture1.jpeg" width="1000px" height="1000px">
-    
-    <p> ICT 11-VIGAN 16 YEARS OLD</p>
-    
-  
-  
-  <button class="join-button" onclick="location.href='gallery.html'">Gallery</button>
-     
-   
-</body>
+      <center>
+         <input  type="password" placeholder="passcode" id="tutorial">
+         <button class="noob" onclick="protectpasscode()">LOGIN</button>
+         <script>
+            function protectpasscode() {
+               const result = document.getElementById("tutorial").value;
+               let passcode = "yougay";
+               let space = '';
+               if (result == space) {
+                  alert("Type passcode")
+               } else {
+                  if (result == passcode) {
+                     
+                     window.location = "gallery.html";
+                  } else {
+                     alert("Incorrect Passcode");
+                     location.reload();
+                  }
+               }
+            }
+         </script>
+      </center>
+   </body>
 </html>
