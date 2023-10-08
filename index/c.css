@@ -1,0 +1,44 @@
+body {
+    background-color: plum;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Sans-serif;
+    font-weight: bold;
+   
+}
+.container {
+display: grid;
+justify-content: center;
+
+align-items: center;
+height: 300px;
+width: 300px;
+border-style: solid;
+
+}
+
+input[type=user],[type=pass] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(252, 252, 129);
+    border: #ccc;
+    cursor: pointer;
+    height: 20px;
+    width: 75px;
+    margin-top: 10px;
+    border-radius: 8px;
+    left: 50px; 
+}
+
+button:hover {
+    opacity: 1s;
+}
