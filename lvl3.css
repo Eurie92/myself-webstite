@@ -1,0 +1,367 @@
+body {
+    background-color: lavender;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.text1 {
+    color: lavender;
+    animation: color1 1s 5;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    
+    
+    
+    
+    
+}
+
+@keyframes color1 {
+  from {color: lavender;}
+  to {color: pink;}
+    
+}
+
+.text2 {
+    color: lavender;
+    animation: color2 1s 5;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    
+    
+}
+
+@keyframes color2 {
+  from {color: lavender;}
+  to {color: pink;}
+    
+}
+
+.text3 {
+    color: lavender;
+    animation: color1 1s 5;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    
+    
+    
+    
+    
+}
+
+@keyframes color1 {
+  from {color: lavender;}
+  to {color: pink;}
+    
+}
+
+.text4 {
+    color: lavender;
+    animation: color1 1s 5;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    
+    
+    
+    
+    
+}
+
+@keyframes color1 {
+  from {color: lavender;}
+  to {color: pink;}
+    
+}
+
+
+.text5 {
+    color: lavender;
+    animation: color1 1s 5;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    
+    
+    
+    
+    
+}
+
+@keyframes color1 {
+  from {color: lavender;}
+  to {color: pink;}
+    
+}
+
+.text6 {
+    color: lavender;
+    animation: color1 1s 5;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    
+    
+    
+    
+    
+}
+
+@keyframes color1 {
+  from {color: lavender;}
+  to {color: pink;}
+    
+}
+
+.see1 {
+    position: absolute;
+    background-color: lavender;
+    border: none;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    color: lavender;
+}
+
+.anywhere {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+}
+.anywhere2 {
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+}
+
+.anywhere3 {
+    position: absolute;
+    top: 150px;
+    font-size: 30px;
+    background-color: #BEADFA;
+    border: none;
+    cursor: pointer;
+}
+
+.anywhere4 {
+    position: absolute;
+    top: 150px;
+    font-size: 30px;
+    background-color: #BEADFA;
+    border: none;
+    cursor: pointer;
+}
+
+
+ 
+
+
+ 
+
+
+.see2 {
+    background-color: lavender;
+    border: none;
+    position: absolute;
+    top: 230px;
+    left: 0;
+    color: lavender;
+    font-size: 20px;
+    
+}
+
+
+.see3 {
+    background-color: lavender;
+    border: none;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    font-size: 20px;
+    color: lavender;
+}
+
+.see4 {
+    background-color: lavender;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    color: lavender;
+ }
+
+.see5 {
+    background-color: lavender;
+    border: none;
+    position: absolute;
+    top: 230px;
+    right: 0;
+    font-size: 20px;
+    color: lavender;
+}
+
+.see6 {
+    background-color: lavender;
+    border: none;
+    position: absolute;
+    top: 500px;
+    right: 0;
+    font-size: 20px;
+    color: lavender;
+}
+
+
+.counter {
+    position: fixed;
+    top:  40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.counter.hide {
+    transform: translate(-50%, -50%) scale(0);
+    animation: hide .2s ease-out;
+}
+
+@keyframes hide {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+.final {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.final.show {
+    transform: translate(-50%, -50%) scale(1);
+    animation: show .3s ease-in;
+}
+
+@keyframes show {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    80% {
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.nums {
+	color: #BEADFA;
+	position: relative;
+	font-size: 50px;
+	overflow: hidden;
+	width: 250px;
+	height: 50px;
+}
+
+.nums span {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(120deg);
+	transform-origin: bottom center;
+}
+
+.nums span.in {
+    transform: translate(-50%, -50%) rotate(0deg);
+	animation: goIn .5s ease-in-out;
+}
+
+.nums span.out {
+	animation: goOut .5s ease-in-out;
+}
+
+@keyframes goIn {
+	0% {
+		transform: translate(-50%, -50%) rotate(120deg);
+	}
+	30% {
+		transform: translate(-50%, -50%) rotate(-20deg);
+	}
+
+	60% {
+		transform: translate(-50%, -50%) rotate(10deg);
+	}
+
+	90%, 100% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+}
+
+@keyframes goOut {
+	0%, 30% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+	60% {
+		transform: translate(-50%, -50%) rotate(20deg);
+	}
+
+	100% {
+		transform: translate(-50%, -50%) rotate(-120deg);
+	}
+}
+
+h4 {
+	font-size: 20px;
+	margin: 5px;
+	text-transform: uppercase;
+}
+
+
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+footer i {
+	color: red;
+}
+
+footer a {
+	color: #3C97BF;
+	text-decoration: none;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="charm.css">
+    
+  </head>
+<body>
+    <div class="container">
+        <div>
+         <input type="user" id="name" placeholder="your name">
+         <input type="password" id="tutorial" placeholder="kelan tayo nag kakilala">
+         <button onclick="protectpasscode()">enter</button>
+    </div>
+    <script>
+   function protectpasscode() {
+   const result = document.getElementById("tutorial").value;
+               let passcode = "july162022";
+               let space = '';
+               if (result == space) {
+                  alert("Type passcode")
+               } else {
+                  if (result == passcode) {
+                     
+          window.location = "charm1.html";
+                  } else {
+                     alert(" mali ka naman eh clue walang space ");
+                     location.reload();
+                  }
+               }
+            }
+         </script>
+</body>
+</html>

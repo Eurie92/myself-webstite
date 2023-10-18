@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>click the body</title>
+    <link rel="stylesheet" href="lvl3.css">
+</head>
+<body>
+    
+    <div class="counter">
+        <div class="nums">
+            <span class="in">10</span>
+            <span>10</span>
+            <span>10</span>
+            <span>10</span>
+            <span>10</span>
+            <span>10</span>
+            <span>10</span>
+            <span>10</span>
+            <span>10</span>
+            <span>10</span>
+            <span>9</span>
+            <span>9</span>
+            <span>9</span>
+            <span>9</span>
+            <span>9</span>
+            <span>9</span>
+            <span>9</span>
+            <span>9</span>
+            <span>9</span>
+            <span>8</span>
+            <span>8</span>
+            <span>8</span>
+            <span>8</span>
+            <span>8</span>
+            <span>8</span>
+            <span>8</span>
+            <span>8</span>
+            <span>7</span>
+            <span>7</span>
+            <span>7</span>
+            <span>7</span>
+            <span>7</span>
+            <span>7</span>
+            <span>7</span>
+            <span>6</span>
+            <span>6</span>
+            <span>6</span>
+            <span>6</span>
+            <span>6</span>
+            <span>6</span>
+            <span>5</span>
+            <span>5</span>
+            <span>5</span>
+            <span>5</span>
+            <span>5</span>
+            <span>4</span>
+            <span>4</span>
+            <span>4</span>
+            <span>4</span>
+            <span>3</span>
+            <span>3</span>
+            <span>3</span>
+            <span>2</span>
+            <span>2</span>
+            <span>1</span>
+            <span>0</span>
+
+
+            
+            
+            
+            
+          
+            
+
+            
+        </div>
+        <h6>complete the task before time is up</h6>
+    </div>
+    <div class="final">
+        <button class="anywhere4" onclick="location.href='last.html'">click me</button>
+    </div>
+   
+
+    
+    <h2 class="anywhere">click anywhere</h2>
+    <h2 class="anywhere2">find and complete the word</h2>
+    <button class="anywhere3" onclick="infoMation()" >INFO</button>
+   
+    <div class="container">
+     
+     <h2 id="ani1" class="text1"><span>I</span></h2>
+     
+     <h2 id="ani2" class="text2"><span>L</span></h2>
+    
+     <h2 id="ani3" class="text3"><span>O</span></h2>
+    
+     <h2 id="ani4" class="text4"><span>V</span></h2>
+    
+     <h2 id="ani5" class="text5"><span>E</span></h2>
+     
+     <h2 id="anis" class="text6"><span> YOU </span></h2>
+     
+    </div>
+    <button class="see1" onclick="playFunction()">click me</button>
+    
+    <button class="see2"  onclick="playFunction2()">click me</button>
+    
+    <button class="see3"  onclick="playFunction3()">click me</button>
+    
+    <button class="see4"  onclick="playFunction4()">click me</button>
+    
+    <button class="see5"  onclick="playFunction5()">click me</button>
+    
+    <button class="see6"  onclick="playFunctions()">click meeee</button>
+   
+    <script>
+       function playFunction() {
+           document.getElementById("ani1").style.animationPlayState = "running";
+       }
+       
+       function playFunction2() {
+           document.getElementById("ani2").style.animationPlayState = "running";
+       }
+       
+       function playFunction3() {
+           document.getElementById("ani3").style.animationPlayState = "running";
+       }
+       
+       function playFunction4() {
+           document.getElementById("ani4").style.animationPlayState = "running";
+       }
+       
+       function playFunction5() {
+           document.getElementById("ani5").style.animationPlayState = "running";
+       }
+
+       function playFunctions() {
+           document.getElementById("anis").style.animationPlayState = "running";
+       }
+
+       function infoMation() {
+        alert("if you done complete the word click now the word and you will see");
+       }
+
+       const nums = document.querySelectorAll('.nums span');
+const counter = document.querySelector('.counter');
+const finalMessage = document.querySelector('.final');
+const repl = document.getElementById('replay');
+
+runAnimation();
+
+function resetDOM() {
+	counter.classList.remove('hide');
+	finalMessage.classList.remove('show');
+    
+	nums.forEach(num => {
+		num.classList.value = '';
+	});
+
+    nums[0].classList.add('in');
+}
+
+function runAnimation() {
+	nums.forEach((num, idx) => {
+		const penultimate = nums.length - 1;
+		num.addEventListener('animationend', (e) => {
+			if(e.animationName === 'goIn' && idx !== penultimate){
+				num.classList.remove('in');
+				num.classList.add('out');
+			} else if (e.animationName === 'goOut' && num.nextElementSibling){
+				num.nextElementSibling.classList.add('in');
+			} else {
+				counter.classList.add('hide');
+				finalMessage.classList.add('show');
+			}
+		});
+	});
+}
+
+repl.addEventListener('click', () => {
+	resetDOM();
+	runAnimation();
+});
+
+       
+
+       
+
+    </script>
+</body>
+</html>

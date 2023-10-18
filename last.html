@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flower.css">
+</head>
+<body>
+    
+    <audio class="mabuti" controls src="Spirited Away Theme Song (piano).mp3"></audio>
+      <h1 class="mabuti2">Play the music</h1>
+      <h1 class="mabuti3">End</h1>
+      
+      <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides w3-animate-top" src="received_301279299112953.jpg" style="width:50%">
+        <img class="mySlides w3-animate-bottom" src="received_601836795433847.jpg" style="width:50%">
+        <img class="mySlides w3-animate-top" src="received_810318680552922.jpg" style="width:50%">
+        <img class="mySlides w3-animate-bottom" src="received_1939841129705865.jpg" style="width:50%">
+      </div>
+
+    <h1>FLOWER FOR MY LOVE</h1>
+    <div class="flower">
+        <div class="f-wrapper">
+            <div class="flower__line"></div>
+            <div class="f">
+                <div class="flower__leaf flower__leaf--1"></div>
+                <div class="flower__leaf flower__leaf--2"></div>
+                <div class="flower__leaf flower__leaf--3"></div>
+                <div class="flower__leaf flower__leaf--4"></div>
+                <div class="flower__leaf flower__leaf--5"></div>
+                <div class="flower__leaf flower__leaf--6"></div>
+                <div class="flower__leaf flower__leaf--7"></div>
+                <div class="flower__leaf flower__leaf--8 flower__fall-down--yellow"></div>
+            </div>
+        </div>
+
+        <div class="f-wrapper f-wrapper--2">
+            <div class="flower__line"></div>
+            <div class="f">
+                <div class="flower__leaf flower__leaf--1"></div>
+                <div class="flower__leaf flower__leaf--2"></div>
+                <div class="flower__leaf flower__leaf--3"></div>
+                <div class="flower__leaf flower__leaf--4"></div>
+                <div class="flower__leaf flower__leaf--5"></div>
+                <div class="flower__leaf flower__leaf--6"></div>
+                <div class="flower__leaf flower__leaf--7"></div>
+                <div class="flower__leaf flower__leaf--8 flower__fall-down--pink"></div>
+            </div>
+        </div>
+
+        <div class="f-wrapper f-wrapper--3">
+            <div class="flower__line"></div>
+            <div class="f">
+                <div class="flower__leaf flower__leaf--1"></div>
+                <div class="flower__leaf flower__leaf--2"></div>
+                <div class="flower__leaf flower__leaf--3"></div>
+                <div class="flower__leaf flower__leaf--4"></div>
+                <div class="flower__leaf flower__leaf--5"></div>
+                <div class="flower__leaf flower__leaf--6"></div>
+                <div class="flower__leaf flower__leaf--7"></div>
+                <div class="flower__leaf flower__leaf--8 flower__fall-down--purple"></div>
+            </div>
+        </div>
+        <div class="flower__glass"></div>
+    </div>
+    
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2500);    
+        }
+        </script>
+
+</body>
+</html>

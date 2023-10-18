@@ -1,87 +1,99 @@
 body {
-    background: #ffe1e1;
+    background-color: lavender;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.click-button{
-    background-color: #ff352b;
-    border: #ff352b;
-    border-radius: 50px;
-    width: 200px;
-    height: 100px;
-    font-family: cursive;
-    margin-top: 2px;
-    cursor: pointer;
-    color: white;
-    strong: solid;
-    border-style: solid;
-    vertical-align: center;
-    font-size: 30px;
-     
-    
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
 }
 
-.click-button:hover{
-    opacity: 0.15s;
-}
-
-.click-button:active{
-    opacity: 0.8s;
-}
-
-.join-button{
-    background-color: white;
-    border-color: #d96aff;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 2px;
-    color: #d96aff;
-    height:100px;
-    width: 200px;
-    cursor: pointer;
-    font-size: 35px;
-    font-family: cursive;
-    transition: background-color 1s,
-       color 1s;
-    
-    }
-      
-.join-button:hover{
-    
-    background-color: #d96aff;
-    color: white;
-    
-   
-}
-
-.join-button:active{
-    opacity: 0.8s;
+/* Modal Content/Box */
+.modal-content {
+  background-color: #dfd5ff;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%;
   
 }
-
-p{
-    font-size: 50px;
+.container {
+    padding: 16px;
 }
 
-.cat-pic {
-    width: 450px;
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 1px;
+  
+  }
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+button {
+    height: 35px;
+    margin: 5px 0;
+    width: auto;
+    border: none;
+    border-radius: 2px;
+    background-color: #dfaaff;
+    color: #5b0056;
     cursor: pointer;
 }
 
-.p1 {
-    font-size: 35px;
-    font-family: arial;
-    
+.container2 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 50px; 
+    border: 1px solid #ffbfff;
+    border-radius: 10px;
+    background: #ffbfea;
 }
 
-.div1 {
-    width: 450px;
-    display: inline-block;
-    vertical-align: top;
-    margin: 5px;
-    
+.container {
+  padding: 16px;
+  border: 1px solid peachpuff;
 }
 
-h1 {
-    font-family: cursive;
-    font-size: 45px;
+span.psw {
+  float: right;
+  padding-top: 16px;
 }
+
+audio {
+    width: 250px;
+    border: 1px solid #dfd5ff;
+    border-radius: 125px;
+}
+
